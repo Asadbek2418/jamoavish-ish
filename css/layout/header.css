@@ -1,0 +1,44 @@
+header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-logo{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar-logo button{
+width: 173px;
+height: 52px;
+color:#F58A07 ;
+background-color: #F58A071A;
+border-radius: 31px;
+border: none;
+}
+.togle{
+    width: 40px;
+    display: none;
+}
+.loogo{
+    font-size: 22px !important;
+    font-weight: bold;
+}
+@media (max-width:860px) {
+    .togle{
+        display: block;
+        margin-right: 20px;
+    }
+    .navbar-logo{
+        display: none;
+    }
+}
