@@ -9,7 +9,7 @@
 }
 
 .about-title {
-    width: 618px;
+    max-width: 618px;
 }
 
 .about-title h1 {
@@ -73,12 +73,12 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 60px;
+    gap: 20px;
 }
 
 .card {
     width: 270px;
     height: 192px;
-
 }
 
 .card h1 {
@@ -154,20 +154,78 @@
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+    transition: 0.5s;
 }
 
 .text {
-    background-color: rgba(37, 37, 37, 1);
+    background-color: rgba(37, 37, 37, 0.796);
     max-width: 290px;
     height: 233px;
     border-radius: 20px;
     color: white;
-    /* margin-top: -255px; */
+    padding-left: 20px;
 }
 
 .text p {
     padding-top: 43px;
     padding-left: 31px;
+    padding-bottom: 15px;
     font-size: 14px;
 
+}
+
+.s-card {
+    transition: 1s;
+}
+
+.text {
+    display: none;
+    transition: 0.5s;
+}
+
+.s-card:hover .text {
+    display: inline-block;
+    margin-top: -100%;
+    transition: 0.5s;
+}
+.s-card:hover {
+    transform: scale(1.05);
+}
+@media (max-width:950px) {
+    #about-section{
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    #about-section img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #energy{
+        text-align: center;
+    }
+    .energies{
+        text-align: center;
+    }
+    #static{
+        flex-wrap: wrap;
+    }
+    #global{
+        text-align: center;
+    }
+    #global h1{
+        display: block;
+    }
+    #team{
+        text-align: center;
+    }
+    #images{
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+
+    }
+    .s-card{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
