@@ -429,3 +429,48 @@ font-size: 24px;
                     font-size: 13px;
                 }
 }
+#home-hero7{
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+.fins h1{
+    font-size:48px ;
+}
+.fins p{
+    color: #5B5B5B;
+    margin-top: 40px;
+    font-size: 18px;
+
+}
+.img{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+.chi h3{
+font-size: 24px;
+
+}
+.chi h4 {
+    font-size:18px ;
+    color: #F58A07;
+    margin-top: 10px;
+}
+.home-hero7 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.caard {
+    max-width: 620px;
+    height: 501px;
+    width: 100%;
+}
+@media (max-width:1200px) {
+    .home-hero7 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+}
