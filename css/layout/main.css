@@ -58,3 +58,48 @@ flex-direction: column;
 align-items: center;
     }
 }
+#home-hero{
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.home-hero2{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.home-hero__pro h1{
+    font-size: 64px;
+}
+.home-hero__pro p {
+    font-size:18px ;
+    color: #5B5B5B;
+}
+.home-hero__button{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    gap: 40px;
+  
+}
+.home-hero__button button{
+    width: 200px;
+        height: 54px;
+        font-size: 16px;
+        border-radius: 27px;
+        border: none;
+        background-color: #DCEAF5;
+        transition: 0.5s;
+}
+.home-hero__button button:hover{
+    color: white;
+    background-color: #F58A07;
+}
+.logo-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 40px;
+}
+.logo-card{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
