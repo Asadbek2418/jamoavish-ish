@@ -22,7 +22,7 @@ footer{
 footer a{
     color: white;
 }
-form input{
+.formm input{
     max-width: 342px;
     width: 100%;
     padding-top: 15px;
@@ -31,7 +31,7 @@ form input{
     border-radius: 31px;
    border: none;
 }
-form button {
+.formm button {
     margin-top: 20px;
     width: 156px;
     height: 54px;
