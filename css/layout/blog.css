@@ -8,15 +8,105 @@
         align-items: center;
         justify-content: space-between;
 
+        @media (max-width:1040px) {
+            flex-direction: column;
+            gap: 30px;
+        }
+
         .blog_hero_content_item {
             display: flex;
             align-items: center;
             gap: 24px;
+            margin-bottom: 24px;
+
+            .blog_hero_content_item_desc {
+                color: #394149;
+                font-size: 16px;
+            }
 
             .blog_hero_content_item_person {
                 display: flex;
                 align-items: center;
                 gap: 8px;
+            }
+        }
+
+        .blog_hero_content_context {
+            font-size: 64px;
+            color: #1D3444;
+            margin-bottom: 24px;
+        }
+
+        .blog_hero_content_desc {
+            font-size: 18px;
+            color: #5B5B5B;
+            margin-bottom: 24px;
+        }
+
+        .blog_hero_content_item_icon {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            .blog_hero_content_item_icon_item {
+                font-size: 16px;
+                color: #F58A07;
+            }
+        }
+
+        .blog_hero_content_image {
+            @media (max-width:1155px) {
+                max-width: 500px;
+            }
+            @media (max-width:500px) {
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+#blog_card{
+    padding-top: 128px;
+    padding-bottom: 128px;
+    .blog_card_context{
+        font-size: 48px;
+        margin-bottom: 64px;
+    }
+    .blog_card_cards{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 40px;
+        .blog_card_card{
+            padding: 32px;
+            padding-top: 230px;
+            max-width: 400px;
+            max-height: 507px;
+            background-color: #EDF7FF;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            .blog_card_card_image{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .blog_card_card_context{
+                font-size: 24px;
+                margin-top: 32px;
+                margin-bottom: 16px;
+            }
+            .blog_card_card_desc{
+                font-size: 16px;
+                margin-bottom: 24px;
+            }
+            .blog_card_icon{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                .blog_card_icon_item{
+                    color: #F58A07;
+                    font-size: 16px;
+                }
             }
         }
     }
