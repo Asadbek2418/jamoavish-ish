@@ -1,0 +1,23 @@
+#blog_hero {
+    background-color: #DCEAF5;
+    padding-top: 218px;
+    padding-bottom: 128px;
+
+    .blog_hero_content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .blog_hero_content_item {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            .blog_hero_content_item_person {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+    }
+}
