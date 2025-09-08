@@ -76,7 +76,6 @@
         display: grid;
         grid-template-columns: repeat(3, auto);
         gap: 40px;
-        background-color: #EDF7FF;
         @media (max-width: 1280px) {
             grid-template-columns: repeat(2, auto);
         }
